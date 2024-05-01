@@ -1,0 +1,209 @@
+button
+{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden; 
+    outline: none;
+}
+
+.but1
+{
+    position: absolute;
+    top:14.5px;
+}
+
+.but2
+{
+    font-size: 20pt;
+    font-family: 'Play', sans-serif;
+    left: 35%;
+    position: absolute;
+    top: 40.5px;
+    color: #575757;
+}
+
+.but3
+{
+    font-size: 20pt;
+    font-family: 'Play', sans-serif;
+    left: 48%;
+    position: absolute;
+    top: 40.5px;
+    color: #575757;
+}
+
+.but4
+{
+    font-size: 20pt;
+    font-family: 'Play', sans-serif;
+    left: 65%;
+    position: absolute;
+    top: 40.5px;
+    color: #575757;
+}
+
+.but5
+{
+    right: 1%;
+    position: absolute;
+    top: 25.4px;
+}
+
+.but6 
+{
+  position: absolute;
+  top: 42px;
+  left: 125px;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.but1:hover + .but6, .but6:hover:not(.but1:hover + .but6) 
+{
+  opacity: 1;
+}
+
+.navbar
+{
+    background-color: #eeeeee;
+    height:100px;
+}
+
+.but1:hover
+{
+    
+        -webkit-animation: logo-animation 0.7s both;
+                animation: logo-animation 0.7s both;
+    }    
+
+@-webkit-keyframes logo-animation {
+    0%,
+    100% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+    }
+    15% {
+      -webkit-transform: translateX(-30px) rotate(6deg);
+              transform: translateX(-30px) rotate(6deg);
+    }
+    30% {
+      -webkit-transform: translateX(15px) rotate(-6deg);
+              transform: translateX(15px) rotate(-6deg);
+    }
+    45% {
+      -webkit-transform: translateX(-15px) rotate(3.6deg);
+              transform: translateX(-15px) rotate(3.6deg);
+    }
+    60% {
+      -webkit-transform: translateX(9px) rotate(-2.4deg);
+              transform: translateX(9px) rotate(-2.4deg);
+    }
+    75% {
+      -webkit-transform: translateX(-6px) rotate(1.2deg);
+              transform: translateX(-6px) rotate(1.2deg);
+    }
+  }
+  @keyframes logo-animation {
+    0%,
+    100% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+    }
+    15% {
+      -webkit-transform: translateX(-30px) rotate(6deg);
+              transform: translateX(-30px) rotate(6deg);
+    }
+    30% {
+      -webkit-transform: translateX(15px) rotate(-6deg);
+              transform: translateX(15px) rotate(-6deg);
+    }
+    45% {
+      -webkit-transform: translateX(-15px) rotate(3.6deg);
+              transform: translateX(-15px) rotate(3.6deg);
+    }
+    60% {
+      -webkit-transform: translateX(9px) rotate(-2.4deg);
+              transform: translateX(9px) rotate(-2.4deg);
+    }
+    75% {
+      -webkit-transform: translateX(-6px) rotate(1.2deg);
+              transform: translateX(-6px) rotate(1.2deg);
+    }
+  }
+  
+.things:hover
+{
+  background-image: linear-gradient(to bottom right, #004e58, #477cb1, #0e9fc7, #bbbaba);
+  -webkit-background-clip: text; 
+  background-clip: text; 
+  color: transparent;
+  
+  background-size: 400%;
+  background-position: -100%;  
+  
+  animation: animatedText 1.4s infinite alternate-reverse;
+
+  font-size: 22pt;
+
+  transition: 0.2s;
+}
+
+@keyframes animatedText{
+  to{
+    background-position: 100%; 
+  }
+  
+}
+
+.info_box
+{
+  background-image: linear-gradient(140deg, #004e58, #3c95a0, #67b2bc, #72bec8);
+  position: absolute;
+  width: 99%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  left:0;
+  right:0;
+  top: 150px;
+  border-radius: 40px;
+}
+
+.BDM
+{
+  font-family: 'Times New Roman', Times, serif;
+  color: transparent;
+  background-image: linear-gradient(45deg, #087e8e,  #3c95a0, #67b2bc, #72bec8, #7fe4e9, #a9fbfc, #c2fbfe, #FFFFFF);
+  -webkit-background-clip: text; 
+  background-clip: text; 
+  
+  background-size: 300%;
+  background-position: -100%;  
+  
+  animation: animatedText 1.4s infinite alternate;
+  font-size: 55pt;
+  
+  position: absolute;
+  top: 60px;
+  left: 28.5%;
+}
+
+.slogan
+{
+  font-size: 19pt;
+  color: #c2fbfe;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 210px;
+  left: 37.55%;
+  text-align: center;
+}
+
